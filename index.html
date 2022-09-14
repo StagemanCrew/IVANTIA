@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Layout «IVANTIA-09.13»</title>
+</head>
+
+<body>
+	<div class="wrapper">
+		<section class="fullscreen">
+			<div class="fullscreen__body">
+				<h1 class="fullscreen__title">Layout «IVANTIA-09.13»</h1>
+				<div class="rootpage">
+					<div class="rootpage__info">
+						12.09.2022
+					</div>
+					<ol class="rootpage__list">
+						<li><a target="_blank" href="home.html">Main page</a></li>
+					</ol>
+					<div class="rootpage__tnx">
+						<h2>Thank you for the order!</h2>
+						<p>I will be glad for a good review.</p>
+						<p>Contact again!</p>
+					</div>
+					<div class="rootpage__contacts">
+						<h2>My contacts:</h2>
+						<p>Mail: <a href="mailto:pavlov220984@gmail.com">pavlov220984@gmail.com</a></p>
+						<p>Phone: <a href="tel:+380676103838">+38 067 610 38 38</a></p>
+					</div>
+				</div>
+				<!--rootpage-->
+				<div class="social">
+					<div class="social__item">
+						<a target="blank" href="https://www.facebook.com/pavlov220984/"><img class="social__link" src="img/my-social/facebook.svg" alt="FaceBook"></a>
+						<a target="blank" href="https://www.instagram.com/psevdo_bassist/"><img class="social__link" src="img/my-social/instagram.svg" alt="Instagram"></a>
+						<a target="blank" href="https://soundcloud.com/psevdo_bassist"><img class="social__link" src="img/my-social/soundcloud.svg" alt="SoundCloud"></a>
+					</div>
+				</div>
+			</div>
+			<!--fullscreen__body-->
+		</section>
+		<!--fullscreen-->
+	</div>
+	<!--wrapper-->
+</body>
+<style>
+	@charset "UTF-8";
+	@import url("https://fonts.googleapis.com/css?family=Special+Elite:regular&display=swap");
+
+	*,
+	*::before,
+	*::after {
+		padding: 0px;
+		margin: 0px;
+		border: 0px;
+		box-sizing: border-box;
+	}
+
+	html,
+	body {
+		height: 100%;
+		margin: 0;
+		padding: 0;
+		min-width: 320px;
+		width: 100%;
+	}
+
+	body {
+		font-family: 'Special Elite';
+		font-size: 100%;
+		line-height: 1;
+		font-size: 1rem;
+		color: #fff;
+	}
+
+	ol li {
+		list-style: none;
+	}
+
+	li a {
+		font-size: 2rem;
+	}
+
+	li:hover {
+		filter: drop-shadow(0px 2px 5px rgba(64, 215, 242, 0.8));
+	}
+
+	a {
+		font-size: 1.5rem;
+		text-decoration: none;
+		color: #eeff00;
+	}
+
+	@media (max-width: 476px) {
+		a {
+			font-size: 1rem;
+		}
+
+		li {
+			font-size: 1.5rem;
+		}
+	}
+
+	a:hover {
+		text-decoration: underline;
+		color: #eeff00;
+	}
+
+	h1 {
+		color: #ebe691;
+		font-size: 2rem;
+		padding-bottom: 5px;
+	}
+
+	@media (max-width: 476px) {
+		h1 {
+			font-size: 1.25rem;
+			margin: 0px 0px 10px 0px;
+		}
+	}
+
+	h2 {
+		color: #ebe691;
+		font-size: 1.5rem;
+	}
+
+	@media (max-width: 476px) {
+		h2 {
+			font-size: 1rem;
+			margin: 0px 0px 10px 0px;
+		}
+	}
+
+	.wrapper {
+		min-height: 100vh;
+		display: flex;
+		flex-direction: column;
+	}
+
+	.fullscreen {
+		min-height: 100vh;
+		display: flex;
+		background: url('img/cover.jpg') center / cover no-repeat;
+		padding: 10px;
+	}
+
+	.fullscreen__body {
+		flex: 1 1 auto;
+		width: 100%;
+		max-width: 1000px;
+		margin: 0 auto;
+		text-align: center;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		padding: 20px 10px;
+	}
+
+	.rootpage__info {
+		line-height: 140%;
+		margin: 0px 0px 10px 0px;
+	}
+
+	.rootpage__contacts,
+	.rootpage__tnx {
+		border-radius: 20px;
+		padding: 10px 10px;
+		line-height: 150%;
+	}
+
+	.rootpage__tnx {
+		display: inline-block;
+		margin: 10px 0 20px 0;
+		background: #ff0000b0;
+	}
+
+	.rootpage__contacts {
+		max-width: 400px;
+		margin: 0 auto;
+		background: #000000bd;
+	}
+
+	.rootpage__contacts a {
+		color: #fff651;
+	}
+
+	.rootpage__contacts a:hover {
+		filter: drop-shadow(0px 2px 5px rgba(64, 215, 242, 0.8));
+	}
+
+	.social {
+		display: flex;
+		justify-content: center;
+		padding-top: 20px;
+	}
+
+	.social__link {
+		max-width: 50px;
+	}
+
+	.social__link:hover {
+		filter: drop-shadow(0px 2px 5px rgba(64, 215, 242, 0.8));
+	}
+
+	.social__item a:not(:last-child) {
+		margin-right: 20px;
+	}
+
+	@media (max-width: 350px) {
+		.social__item a:not(:last-child) {
+			margin-right: 10px;
+		}
+	}
+</style>
+
+</html>
